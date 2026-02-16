@@ -21,7 +21,7 @@ const PolitiqueConfidentialite = () => {
                 <strong>Food Truck Afrique</strong><br />
                 [Adresse à compléter]<br />
                 E-mail : [À compléter]<br />
-                Téléphone : +32 484 08 15 51
+                
               </p>
             </section>
 

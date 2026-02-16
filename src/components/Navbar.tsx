@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import logo from "@/assets/logo.png";
 import { Menu, Phone, MessageCircle, Home, ShoppingBag, Users, FileText } from "lucide-react";
 import {
   Sheet,
@@ -61,13 +62,8 @@ const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between px-4 lg:px-8">
-        <button onClick={() => handleNavClick("/")} className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl gradient-warm flex items-center justify-center">
-            <span className="text-primary-foreground font-display font-bold text-lg">FT</span>
-          </div>
-          <span className="font-display font-bold text-lg sm:text-xl text-foreground">
-            Food Truck<span className="text-gradient"> Afrique</span>
-          </span>
+        <button onClick={() => handleNavClick("/")} className="flex items-center gap-1">
+          <img src={logo} alt="Food Truck Afrique" className="h-12 w-auto object-contain" />
         </button>
 
         {/* Desktop nav */}
@@ -122,12 +118,7 @@ const Navbar = () => {
           <SheetContent side="right" className="w-[300px] flex flex-col">
             <SheetHeader className="pb-6 border-b border-border">
               <SheetTitle className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg gradient-warm flex items-center justify-center">
-                  <span className="text-primary-foreground font-display font-bold text-sm">FT</span>
-                </div>
-                <span className="font-display font-bold text-foreground">
-                  Food Truck<span className="text-gradient"> Afrique</span>
-                </span>
+                <img src={logo} alt="Food Truck Afrique" className="h-10 w-auto object-contain" />
               </SheetTitle>
             </SheetHeader>
 

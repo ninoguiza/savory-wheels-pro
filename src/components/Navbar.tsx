@@ -5,6 +5,7 @@ import { Menu, X, Phone, MessageCircle } from "lucide-react";
 const navLinks = [
 { label: "Accueil", href: "#hero" },
 { label: "Catalogue", href: "/catalogue" },
+{ label: "À propos", href: "/a-propos" },
 { label: "Avantages", href: "#avantages" },
 { label: "Processus", href: "#processus" },
 { label: "Témoignages", href: "#temoignages" },

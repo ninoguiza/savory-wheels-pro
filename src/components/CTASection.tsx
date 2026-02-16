@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import interiorImage from "@/assets/food-truck-interior.jpg";
 
 const CTASection = () => {
@@ -29,9 +29,20 @@ const CTASection = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a
                 href="https://wa.me/32484081551"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl gradient-warm text-primary-foreground font-display font-bold text-lg hover-glow hover:scale-105 transition-all duration-300 shadow-lg">
-
-                Devis Gratuit
+                <Phone className="w-5 h-5" />
+                WhatsApp
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <a
+                href="https://t.me/+32484081551"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-[hsl(200,80%,50%)] text-primary-foreground font-display font-bold text-lg hover:bg-[hsl(200,80%,45%)] hover:scale-105 transition-all duration-300 shadow-lg">
+                <MessageCircle className="w-5 h-5" />
+                Telegram
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>

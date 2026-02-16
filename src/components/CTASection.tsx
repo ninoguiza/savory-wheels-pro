@@ -74,7 +74,7 @@ const CTASection = () => {
 
             </div>
             <div className="absolute -bottom-4 -left-4 glass-dark rounded-2xl px-6 py-4 animate-float">
-              <p className="text-primary-foreground font-display font-bold text-2xl">200+</p>
+              <p className="text-primary-foreground font-display font-bold text-2xl">100+</p>
               <p className="text-primary-foreground/60 text-sm">Remorques livrées</p>
             </div>
           </div>

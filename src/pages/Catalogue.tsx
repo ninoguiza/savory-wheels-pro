@@ -1,6 +1,6 @@
 import { ArrowRight, ChefHat, Flame, Coffee, IceCream, Sandwich, CakeSlice } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImg from "@/assets/hero-food-truck.jpg";
+import heroImg from "@/assets/catalogue-hero.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";

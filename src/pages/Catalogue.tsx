@@ -1,5 +1,6 @@
 import { ArrowRight, ChefHat, Flame, Coffee, IceCream, Sandwich, CakeSlice } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroImg from "@/assets/hero-food-truck.jpg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -68,15 +69,21 @@ const Catalogue = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-28 pb-16 lg:pt-36 lg:pb-20 gradient-hero pattern-maghreb">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+      <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-20 overflow-hidden">
+        <img
+          src={heroImg}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold mb-4 animate-fade-up">
             Nos Modèles
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 animate-fade-up delay-100">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white mb-6 animate-fade-up delay-100">
             Catalogue <span className="text-gradient">Food Trucks</span>
           </h1>
-          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto animate-fade-up delay-200">
+          <p className="text-white/80 text-lg max-w-2xl mx-auto animate-fade-up delay-200">
             Découvrez nos modèles de remorques professionnelles, entièrement personnalisables selon votre activité et vos besoins.
           </p>
         </div>

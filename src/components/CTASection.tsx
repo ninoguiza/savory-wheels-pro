@@ -29,8 +29,8 @@ const CTASection = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a
                 href="https://wa.me/32470123456"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl gradient-warm text-primary-foreground font-display font-bold text-lg hover-glow hover:scale-105 transition-all duration-300 shadow-lg"
-              >
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl gradient-warm text-primary-foreground font-display font-bold text-lg hover-glow hover:scale-105 transition-all duration-300 shadow-lg">
+
                 Devis Gratuit
                 <ArrowRight className="w-5 h-5" />
               </a>
@@ -39,11 +39,11 @@ const CTASection = () => {
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <Phone className="w-5 h-5 text-amber-400" />
-                <span>+32 470 123 456</span>
+                <span>+32 484 08 15 51</span>
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <Mail className="w-5 h-5 text-amber-400" />
-                <span>contact@foodtrucksolution.com</span>
+                <span>infos@foodtrucks-afrique.pro</span>
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5 text-amber-400" />
@@ -59,8 +59,8 @@ const CTASection = () => {
                 src={interiorImage}
                 alt="Intérieur professionnel d'un food truck équipé en acier inoxydable"
                 className="w-full h-80 lg:h-[28rem] object-cover"
-                loading="lazy"
-              />
+                loading="lazy" />
+
             </div>
             <div className="absolute -bottom-4 -left-4 glass-dark rounded-2xl px-6 py-4 animate-float">
               <p className="text-primary-foreground font-display font-bold text-2xl">200+</p>
@@ -69,8 +69,8 @@ const CTASection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CTASection;

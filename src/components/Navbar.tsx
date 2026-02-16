@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, MessageCircle } from "lucide-react";
 
 const navLinks = [
 { label: "Accueil", href: "#hero" },
@@ -52,10 +52,19 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="https://wa.me/32484081551"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2.5 rounded-xl gradient-warm text-primary-foreground font-semibold text-sm hover-glow transition-all duration-300 hover:scale-105">
-
             <Phone className="w-4 h-4" />
             WhatsApp
+          </a>
+          <a
+            href="https://t.me/+32484081551"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[hsl(200,80%,50%)] text-primary-foreground font-semibold text-sm hover:bg-[hsl(200,80%,45%)] transition-all duration-300 hover:scale-105">
+            <MessageCircle className="w-4 h-4" />
+            Telegram
           </a>
         </div>
 
@@ -84,13 +93,22 @@ const Navbar = () => {
                 </a>
               </li>
           )}
-            <li className="mt-2">
+            <li className="mt-2 flex flex-col gap-2">
               <a
               href="https://wa.me/32484081551"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl gradient-warm text-primary-foreground font-semibold">
-
                 <Phone className="w-4 h-4" />
                 WhatsApp 24/7
+              </a>
+              <a
+              href="https://t.me/+32484081551"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[hsl(200,80%,50%)] text-primary-foreground font-semibold">
+                <MessageCircle className="w-4 h-4" />
+                Telegram
               </a>
             </li>
           </ul>

@@ -1,4 +1,4 @@
-import { Truck, Facebook, Instagram, Youtube } from "lucide-react";
+import { Truck, Facebook, Phone, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -42,16 +42,33 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4">Suivez-nous</h4>
             <div className="flex gap-3">
-              {[Facebook, Instagram, Youtube].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-primary transition-colors duration-200"
-                  aria-label="Réseau social"
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a
+                href="https://www.facebook.com/food.truck.afrique"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-primary transition-colors duration-200"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://wa.me/32484081551"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-primary transition-colors duration-200"
+                aria-label="WhatsApp"
+              >
+                <Phone className="w-5 h-5" />
+              </a>
+              <a
+                href="https://t.me/+32484081551"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-primary transition-colors duration-200"
+                aria-label="Telegram"
+              >
+                <MessageCircle className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>

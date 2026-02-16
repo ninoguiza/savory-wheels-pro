@@ -51,7 +51,7 @@ const Navbar = () => {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="https://wa.me/32470123456"
+            href="https://wa.me/32484081551"
             className="flex items-center gap-2 px-5 py-2.5 rounded-xl gradient-warm text-primary-foreground font-semibold text-sm hover-glow transition-all duration-300 hover:scale-105">
 
             <Phone className="w-4 h-4" />
@@ -86,7 +86,7 @@ const Navbar = () => {
           )}
             <li className="mt-2">
               <a
-              href="https://wa.me/32470123456"
+              href="https://wa.me/32484081551"
               className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl gradient-warm text-primary-foreground font-semibold">
 
                 <Phone className="w-4 h-4" />

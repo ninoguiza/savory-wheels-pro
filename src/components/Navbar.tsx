@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 
 const navLinks = [
 { label: "Accueil", href: "#hero" },
+{ label: "Catalogue", href: "/catalogue" },
 { label: "Avantages", href: "#avantages" },
 { label: "Processus", href: "#processus" },
 { label: "Témoignages", href: "#temoignages" },
@@ -13,6 +15,21 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (href: string) => {
+    setMobileOpen(false);
+    if (href.startsWith("/")) {
+      navigate(href);
+    } else if (href.startsWith("#")) {
+      if (location.pathname !== "/") {
+        navigate("/" + href);
+      } else {
+        document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -40,12 +57,11 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) =>
           <li key={link.href}>
-              <a
-              href={link.href}
+              <button
+              onClick={() => handleNavClick(link.href)}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
-
                 {link.label}
-              </a>
+              </button>
             </li>
           )}
         </ul>
@@ -85,13 +101,11 @@ const Navbar = () => {
           <ul className="flex flex-col p-4 gap-1">
             {navLinks.map((link) =>
           <li key={link.href}>
-                <a
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block px-4 py-3 rounded-lg text-foreground font-medium hover:bg-secondary transition-colors">
-
+                <button
+              onClick={() => handleNavClick(link.href)}
+              className="block w-full text-left px-4 py-3 rounded-lg text-foreground font-medium hover:bg-secondary transition-colors">
                   {link.label}
-                </a>
+                </button>
               </li>
           )}
             <li className="mt-2 flex flex-col gap-2">

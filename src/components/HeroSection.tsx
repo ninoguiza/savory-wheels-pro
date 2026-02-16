@@ -52,7 +52,7 @@ const HeroSection = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-10 animate-fade-up delay-400">
             <a
-              href="#contact"
+              href="#devis"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl gradient-warm text-primary-foreground font-display font-bold text-lg hover-glow hover:scale-105 transition-all duration-300 shadow-lg"
             >
               Demander un devis gratuit

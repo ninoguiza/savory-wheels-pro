@@ -99,16 +99,19 @@ const APropos = () => {
             </div>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
-                Fondée en 2015, <strong className="text-foreground">Food Truck Afrique</strong> est née d'une conviction simple : chaque entrepreneur mérite un outil de travail de qualité professionnelle, accessible et adapté à ses besoins.
+                <strong className="text-foreground">Food Truck Afrique</strong> est née en 2022 d'une vision claire : offrir aux entrepreneurs africains des food trucks professionnels, fiables et réellement adaptés à leurs réalités terrain.
               </p>
               <p>
-                Notre fondateur, passionné de street food et expert en import-export, a identifié un manque criant sur le marché : des remorques alimentaires fiables, conformes aux normes européennes, et accessibles aux entrepreneurs du Maghreb et d'Afrique subsaharienne.
+                Son fondateur, passionné de street food et spécialiste en import-export, a rapidement constaté un problème majeur : le marché proposait soit du matériel bas de gamme, soit des solutions coûteuses et mal adaptées aux normes locales et européennes. Il fallait créer une alternative sérieuse, structurée et accessible.
               </p>
               <p>
-                Depuis, nous avons accompagné <strong className="text-foreground">plus de 500 entrepreneurs</strong> dans la concrétisation de leur rêve. De la Belgique au Maroc, de la France à la Tunisie, nos remorques roulent sur les routes de deux continents.
+                Food Truck Afrique s'est donc construite autour d'un objectif simple : proposer des remorques alimentaires conformes aux standards européens, personnalisables et pensées pour la rentabilité.
               </p>
               <p>
-                Aujourd'hui, nous sommes fiers d'être reconnus comme un acteur majeur dans la fabrication et l'importation de remorques alimentaires sur mesure.
+                En quelques années, <strong className="text-foreground">plus de 100 entrepreneurs</strong> nous ont fait confiance. Nos remorques circulent aujourd'hui entre l'Europe et l'Afrique du Nord, contribuant à la réussite de projets ambitieux.
+              </p>
+              <p>
+                Aujourd'hui, Food Truck Afrique s'impose comme un partenaire stratégique dans la fabrication et l'importation de food trucks sur mesure — avec une approche orientée performance, conformité et accompagnement complet.
               </p>
             </div>
           </div>

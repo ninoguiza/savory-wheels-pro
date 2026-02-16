@@ -1,4 +1,5 @@
 import { Truck, Facebook, Phone, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,16 +27,6 @@ const Footer = () => {
               <li><a href="#avantages" className="hover:text-background transition-colors">Avantages</a></li>
               <li><a href="#processus" className="hover:text-background transition-colors">Processus</a></li>
               <li><a href="#temoignages" className="hover:text-background transition-colors">Témoignages</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-sm text-background/60">
-              <li>Remorques sur mesure</li>
-              <li>Homologation CE</li>
-              <li>Import Maghreb</li>
-              <li>Formation & SAV</li>
             </ul>
           </div>
 
@@ -70,6 +61,16 @@ const Footer = () => {
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className="font-display font-semibold mb-4">Informations légales</h4>
+            <ul className="space-y-2 text-sm text-background/60">
+              <li><Link to="/mentions-legales" className="hover:text-background transition-colors">Mentions légales</Link></li>
+              <li><Link to="/politique-confidentialite" className="hover:text-background transition-colors">Politique de confidentialité</Link></li>
+              <li><Link to="/cgv" className="hover:text-background transition-colors">CGV</Link></li>
+            </ul>
           </div>
         </div>
 

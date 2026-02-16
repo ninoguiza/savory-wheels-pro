@@ -24,7 +24,7 @@ const MentionsLegales = () => {
                 Siège social : [Adresse à compléter]<br />
                 Numéro de TVA intracommunautaire : [À compléter]<br />
                 Numéro d'immatriculation : [À compléter]<br />
-                Téléphone : +32 484 08 15 51<br />
+                
                 E-mail : [À compléter]
               </p>
             </section>
